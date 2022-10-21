@@ -1,0 +1,123 @@
+@media (max-width: 768px) {
+
+    body {
+        width: 100vw;
+    }
+
+    .conteudo-principal {
+        flex-direction: column;
+    }
+
+    .conteudo-principal-escrito {
+        padding-top: 50px;
+        align-items: center;
+    }
+
+    .conteudo-secundario-paragrafo {
+        max-width: 650px;
+    }
+}
+
+@media (max-width: 430px) {
+    body {
+        width: 100vw;
+    }
+
+    .cabecalho {
+        justify-content: space-between;
+    }
+
+    .cabecalho-menu {
+        display: none;
+    }
+
+    .one, .two, .three {
+        background-color: white;
+        height: 5px;
+        width: 100%;
+        margin: 6px auto;
+
+        transition-duration: 0.3s;
+    }
+
+    .menu-toggle {
+        width: 40px;
+        height: 30px;
+        margin-right: 20px;
+    }
+
+    .menu-section.on {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        width: 100vw;
+        height: 100vh;
+
+        background-color: #8E5D52;
+
+        z-index: 10;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu-section.on > nav {
+        display: block;
+    }
+
+    .menu-section.on .menu-toggle {
+        position: absolute;
+        right: 27px;
+        top: 45px;
+    }
+
+    .menu-section.on .menu-toggle .one {
+        transform: rotate(45deg) translate(7px, 7px);
+    }
+
+    .menu-section.on .menu-toggle .two {
+        opacity: 0;
+    }
+    
+    .menu-section.on .menu-toggle .three {
+        transform: rotate(-45deg) translate(8px, -9px);
+    }
+
+    .menu-section.on nav a{
+        text-align: center;
+        display: block;
+
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+    .conteudo-principal-escrito{
+        width: 310px;
+    }
+
+    .conteudo-principal-escrito-titulo {
+        font-size: 50px;
+    }
+
+    .conteudo-principal-escrito-subtitulo {
+        font-size: 20px;
+    }
+
+    .conteudo-principal-escrito-botao {
+        width: 150px;
+        height: 50px;
+        font-size: 20px;
+    }
+
+    .conteudo-principal-imagem {
+        height: 370px;
+    }
+
+    .conteudo-secundario-paragrafo {
+        width: 310px;
+    }
+
+
+}
